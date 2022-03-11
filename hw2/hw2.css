@@ -1,0 +1,90 @@
+/* Шрифт, уберем отступы */
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Стилизация ячеек и ссылок */
+nav a {
+  display: block;
+  text-decoration: none;
+  padding: 16px;
+  width: 201px;
+  height: 16px;
+  color: #fff;
+}
+
+/* Цвета горизантального меню */
+nav > ul > li > a {
+  background-color: #3ab500;
+}
+
+nav ul > li:hover > a {
+  background-color: #000;
+}
+
+/* Цвета вертикального меню */
+nav ul li ul li:nth-child(even) {
+  background-color: #60D828;
+}
+
+nav ul li ul li:nth-child(odd) {
+  background-color: #3ab500;
+}
+
+nav li:hover > a {
+  background-color: #2b8700;
+}
+
+/* Класс arrow прописываем в html, если есть еще подменю*/
+a.arrow::after {
+  content: ">";
+  float: right;
+}
+
+a.arrow:hover {
+  background-color: #000;
+}
+
+/* Тень */
+nav > ul > li > ul {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Скроем маркеры списков */
+nav ul {
+  list-style: none;
+}
+
+/* Отобразим по горизонтали */
+nav > ul {
+  display: flex;
+}
+
+/* Делаем меню раскрывающимся */
+nav li ul {
+  display: none;
+  position: absolute;
+}
+
+nav ul ul li {
+  position: relative;
+}
+
+/*nav li > ul > li > ul {
+  position: absolute;
+  top: 0px;
+  right: -233px;
+}*/
+
+nav ul ul ul {
+  position: absolute;
+  top: 0px;
+  right: -233px;
+}
+
+nav li:hover > ul {
+  display: block;
+}
