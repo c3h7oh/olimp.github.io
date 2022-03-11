@@ -34,8 +34,12 @@ nav ul li ul li:nth-child(odd) {
   background-color: #3ab500;
 }
 
-nav li:hover > a:not(.arrow) {
+nav ul ul li:hover > a {
   background-color: #2b8700;
+}
+
+nav li:hover > a.arrow {
+  background-color: #000;
 }
 
 /* Класс arrow прописываем в html, если есть еще подменю*/
