@@ -21,7 +21,7 @@ nav > ul > li > a {
   background-color: #3ab500;
 }
 
-nav > ul > li:hover > a {
+nav ul > li:hover > a {
   background-color: #000;
 }
 
@@ -72,12 +72,6 @@ nav li ul {
 nav ul ul li {
   position: relative;
 }
-
-/*nav li > ul > li > ul {
-  position: absolute;
-  top: 0px;
-  right: -233px;
-}*/
 
 nav ul ul ul {
   position: absolute;
