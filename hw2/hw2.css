@@ -16,16 +16,11 @@ nav a {
   color: #fff;
 }
 
-/* Цвета горизантального меню */
+/* Цвета меню */
 nav > ul > li > a {
   background-color: #3ab500;
 }
 
-nav ul > li:hover > a {
-  background-color: #000;
-}
-
-/* Цвета вертикального меню */
 nav ul li ul li:nth-child(even) {
   background-color: #60D828;
 }
@@ -34,13 +29,15 @@ nav ul li ul li:nth-child(odd) {
   background-color: #3ab500;
 }
 
-nav ul ul li:hover > a {
+nav ul li:hover > a {
   background-color: #2b8700;
 }
 
-nav li:hover > a.arrow {
+nav li:hover > a.arrow,
+nav li:hover > a.top-arrow {
   background-color: #000;
 }
+
 
 /* Класс arrow прописываем в html, если есть еще подменю*/
 a.arrow::after {
@@ -76,7 +73,6 @@ nav li ul {
 nav ul ul li {
   position: relative;
 }
-
 
 nav ul ul ul {
   position: absolute;
