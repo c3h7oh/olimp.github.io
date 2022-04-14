@@ -179,10 +179,11 @@ main {
   width: 100%;
   height: 160px;
   grid-column: 1/3;
-  background-image: url(lays.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  justify-content: center;
 }
+
+.product-img img {}
 
 .disabled {
   opacity: 0.5;
