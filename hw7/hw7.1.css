@@ -33,7 +33,8 @@ h1.card-heading {
 
 p.card-text {
   font-size: 1.5em;
-  color: rgba(60, 60, 67, 0.85);
+  color: rgb(60, 60, 67);
+  opacity: 0.85;
 }
 
 .card-icon {
@@ -52,8 +53,12 @@ p.card-text {
     margin-bottom: 32px;
   }
 
+  .card-img img {
+    border-radius: 20px;
+  }
+
   .card-info {
-    width: 25%;
+    width: 40%;
   }
 
   h1.card-heading {
@@ -96,6 +101,10 @@ p.card-text {
   .card-icon {
     margin-bottom: 8px;
   }
+
+  .card-img img {
+    border-radius: 10px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -105,6 +114,6 @@ p.card-text {
   }
 
   p.card-text {
-    color: rgba(240, 240, 240, 0.85);
+    color: #f0f0f0;
   }
 }
