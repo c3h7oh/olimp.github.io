@@ -248,26 +248,26 @@
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: #000000;
-    color: #ffffff;
+    background: #171717;
+    color: #f0f0f0;
   }
 
   .header a {
-    color: #ffffff;
+    color: #f0f0f0;
   }
 
   .line,
   .line::before,
   .line::after {
-    background-color: #ffffff;
+    background-color: #f0f0f0;
   }
 
   .menu:hover .submenu a {
-    color: #ffffff;
+    color: #f0f0f0;
   }
 
   .menu:hover .submenu {
-    background: #000000;
-    border-right: 24px solid #000000;
+    background: #171717;
+    border-right: 24px solid #171717;
   }
 }
